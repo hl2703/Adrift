@@ -33,19 +33,30 @@ public class SelectMusicActivity extends AppCompatActivity {
         });
 
 
-/*
-        myObject obj1= new myObject(R.drawable.pika,"Breathing Exercise");
+
+        selectObject obj1= new selectObject(R.drawable.smile,"Forest");
         objectInfoList.add(obj1);//first relax feature
-        myObject obj2= new myObject(R.drawable.pika,"Nature Simulation");
+
+        selectObject obj2= new selectObject(R.drawable.smile,"Waves");
+        objectInfoList.add(obj2);
+
+        selectObject obj3= new selectObject(R.drawable.smile,"Birds");
+        objectInfoList.add(obj3);
+        selectObject obj4= new selectObject(R.drawable.smile,"Waves");
+        objectInfoList.add(obj4);
+
+        selectObject obj5= new selectObject(R.drawable.smile,"Waves");
+        objectInfoList.add(obj5);
+       /* myObject obj2= new myObject(R.drawable.pika,"Nature Simulation");
         objectInfoList.add(obj2);//second relax feature
 */
 
 
-        for (int i=1; i<10;i++){
+       /* for (int i=1; i<10;i++){
 
             selectObject obj = new selectObject(R.drawable.person,String.valueOf(i));
             objectInfoList.add(obj);
-        }
+        }*/
 
         RecyclerView recyclerViewCustom = findViewById(R.id.recyclerview2);
         SelectAdapter sAdapter = new SelectAdapter(objectInfoList);
