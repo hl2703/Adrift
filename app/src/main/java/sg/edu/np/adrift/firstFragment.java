@@ -67,7 +67,39 @@ public class firstFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_first, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_first, container, false);
+        RelativeLayout r= (RelativeLayout) rootView.findViewById(R.id.layout1);
+        r.setOnTouchListener(new View.OnTouchListener()
+        {
+
+            @Override
+            public boolean onTouch(View v, MotionEvent event)
+            {
+                Intent intent = new Intent(r.getContext(), BreatheActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intent);
+                return false;
+
+            }
+
+        });
+        RelativeLayout r2= (RelativeLayout) rootView.findViewById(R.id.layout3);
+        r2.setOnTouchListener(new View.OnTouchListener()
+        {
+
+            @Override
+            public boolean onTouch(View v, MotionEvent event)
+            {
+                Intent intent2 = new Intent(r2.getContext(), SelectMusicActivity.class);
+                intent2.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intent2);
+                return false;
+
+            }
+
+        });
+
+        return rootView;
 
 
 
