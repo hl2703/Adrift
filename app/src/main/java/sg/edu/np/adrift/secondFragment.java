@@ -60,6 +60,23 @@ public class secondFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_second, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_second, container, false);
+        RelativeLayout r= (RelativeLayout) rootView.findViewById(R.id.l1);
+        r.setOnTouchListener(new View.OnTouchListener()
+        {
+
+            @Override
+            public boolean onTouch(View v, MotionEvent event)
+            {
+                Intent intent = new Intent(r.getContext(), TipsActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intent);
+                return false;
+
+            }
+
+        });
+        return rootView;
+
     }
 }

@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Adrift">
-        <activity android:name=".MusicActivity3"></activity>
+        <activity android:name=".TipsActivity"></activity>
+        <activity android:name=".MusicActivity3" />
         <activity android:name=".MusicActivity2" />
         <activity android:name=".MusicActivity" />
         <activity android:name=".SelectMusicActivity" />

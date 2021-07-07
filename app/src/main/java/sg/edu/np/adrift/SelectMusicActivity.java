@@ -52,11 +52,11 @@ public class SelectMusicActivity extends AppCompatActivity {
 */
 
 
-       /* for (int i=1; i<10;i++){
+        for (int i=1; i<5;i++){
 
-            selectObject obj = new selectObject(R.drawable.person,String.valueOf(i));
+            selectObject obj = new selectObject(R.drawable.ic_baseline_lock_24,String.valueOf("Coming soon"));
             objectInfoList.add(obj);
-        }*/
+        }
 
         RecyclerView recyclerViewCustom = findViewById(R.id.recyclerview2);
         SelectAdapter sAdapter = new SelectAdapter(objectInfoList);
