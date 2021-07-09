@@ -11,8 +11,10 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class MusicActivity3 extends AppCompatActivity {
+import com.airbnb.lottie.LottieAnimationView;
 
+public class MusicActivity3 extends AppCompatActivity {
+    LottieAnimationView l;
     MediaPlayer mediaPlayer;
     ImageButton imgB;
     @Override
@@ -24,7 +26,9 @@ public class MusicActivity3 extends AppCompatActivity {
         setContentView(R.layout.activity_music);
         TextView m =findViewById(R.id.textView3);
         m.setText(name);
-
+        l=findViewById(R.id.animationView);
+        l.setAnimation(R.raw.birdani);
+        l.playAnimation();
         //if(m.getText()=="Forest") {
         mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.birds);
         mediaPlayer.setLooping(true);

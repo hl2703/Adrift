@@ -11,12 +11,16 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.airbnb.lottie.Lottie;
+import com.airbnb.lottie.LottieAnimationView;
+
 public class MusicActivity2 extends AppCompatActivity {
 
 
 
         MediaPlayer mediaPlayer;
         ImageButton imgB;
+        LottieAnimationView l;
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
@@ -26,7 +30,9 @@ public class MusicActivity2 extends AppCompatActivity {
             setContentView(R.layout.activity_music);
             TextView m =findViewById(R.id.textView3);
             m.setText(name);
-
+            l=findViewById(R.id.animationView);
+            l.setAnimation(R.raw.wave);
+            l.playAnimation();
             //if(m.getText()=="Forest") {
             mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.waves);
             mediaPlayer.setLooping(true);
