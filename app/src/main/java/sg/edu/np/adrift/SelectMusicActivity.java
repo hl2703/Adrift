@@ -42,11 +42,11 @@ public class SelectMusicActivity extends AppCompatActivity {
 
         selectObject obj3= new selectObject(R.drawable.smile,"Birds");
         objectInfoList.add(obj3);
-        selectObject obj4= new selectObject(R.drawable.smile,"Waves");
-        objectInfoList.add(obj4);
+        //selectObject obj4= new selectObject(R.drawable.smile,"Waves");
+        //objectInfoList.add(obj4);
 
-        selectObject obj5= new selectObject(R.drawable.smile,"Waves");
-        objectInfoList.add(obj5);
+        //selectObject obj5= new selectObject(R.drawable.smile,"Waves");
+        //objectInfoList.add(obj5);
        /* myObject obj2= new myObject(R.drawable.pika,"Nature Simulation");
         objectInfoList.add(obj2);//second relax feature
 */

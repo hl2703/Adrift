@@ -134,7 +134,7 @@
                         android:layout_below="@id/bus1"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
-                        android:text="Listen"
+                        android:text="Sounds of Nature"
                         android:textSize="24sp" />
 
                     <ImageView
