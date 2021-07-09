@@ -35,36 +35,20 @@ public class SelectAdapter extends RecyclerView.Adapter<SelectViewHolder> {
     public void onBindViewHolder(SelectViewHolder holder, int position){
        selectObject listObjects = data.get(position);
 
-       //if(position==0) {
+
            holder.image.setImageResource(listObjects.getImage());
            holder.txt.setText(listObjects.getText1());
-       //}
 
-       //else{
-          // holder.image.setImageResource(listObjects.getImage());
-       //}
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               /* Intent intent = new Intent(holder.txt.getContext(), MusicActivity.class);
 
-                intent.putExtra("index",position);
-                holder.txt.getContext().startActivity(intent);
-*/
-
-
+//link to different activities based on position
                 if (position == 0) {
                     Intent intent = new Intent(holder.txt.getContext(), MusicActivity.class);
                     intent.putExtra("Name", listObjects.getText1()); //send info to new activity in a map
 
-                    //intent.putExtra("index","0");
-                    //intent.putExtra("music",R.raw.forest);
                     holder.txt.getContext().startActivity(intent);
-
-                   /* File audio = new File("/res//raw/forest.mp3");
-                    Intent intent2 = new Intent(Intent.ACTION_SEND).setType("audio/*");
-                    intent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(audio));
-                    holder.txt.getContext().startActivity(Intent.createChooser(intent, "music"));*/
                 }
                 else if (position == 1) {
                     Intent intent = new Intent(holder.txt.getContext(), MusicActivity2.class);
@@ -79,24 +63,6 @@ public class SelectAdapter extends RecyclerView.Adapter<SelectViewHolder> {
                 }
             }
         });
-               // Log.d("Debug", "Image clicked");
-
-                /*new AlertDialog.Builder(holder.txt.getContext())
-                        .setTitle("Profile")
-                        .setMessage("hello")
-                        .setPositiveButton("View", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                Intent viewProfile = new Intent(holder.txt.getContext(), MainActivity.class);
-                                viewProfile.putExtra("id", position);
-                                holder.txt.getContext().startActivity(viewProfile);
-                            }
-                        })
-                        .setNegativeButton("Close", null)
-                        .show();
-
-            }
-        });*/
 
 
 

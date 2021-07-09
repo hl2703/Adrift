@@ -25,7 +25,7 @@ public class MusicActivity extends AppCompatActivity {
         TextView m =findViewById(R.id.textView3);
         m.setText(name);
 
-        //if(m.getText()=="Forest") {
+       //play music
             mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.forest);
             mediaPlayer.setLooping(true);
 
@@ -51,7 +51,7 @@ public class MusicActivity extends AppCompatActivity {
                     }
                 }
             });
-
+//back btn
             ImageView imageView = findViewById(R.id.backBtn);
             imageView.setOnTouchListener(new View.OnTouchListener() {
                 @Override

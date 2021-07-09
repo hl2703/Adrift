@@ -30,10 +30,11 @@ public class BreatheActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
         // getActionBar().hide();
+        //play music
         mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.breathe);
         mediaPlayer.setLooping(true);
         animationView=findViewById(R.id.animationView);
-
+//start countdown
         final Handler handler = new Handler();
         final TextView textView = (TextView) findViewById(R.id.textView);
         final java.util.concurrent.atomic.AtomicInteger n = new AtomicInteger(3);
@@ -54,21 +55,7 @@ public class BreatheActivity extends AppCompatActivity {
         handler.postDelayed(counter, 1000);
         //animationView = findViewById(R.id.animationView);
 
-/*
-        textView = findViewById(R.id.breatheText);
-        final String[] array = {"Breathe Out", "Breathe In"};
-        textView.post(new Runnable() {
-            int i = 0;
-            @Override
-            public void run() {
-                textView.setText(array[i]);
-                i++;
-                if (i ==2)
-                    i = 0;
-                textView.postDelayed(this, 6500);
-            }
-        });
-*/
+//back button
         ImageView imageView =findViewById(R.id.backBtn);
         imageView.setOnTouchListener(new View.OnTouchListener() {
             @Override

@@ -61,6 +61,7 @@ public class secondFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_second, container, false);
+        //set click listener for first option
         RelativeLayout r= (RelativeLayout) rootView.findViewById(R.id.l1);
         r.setOnTouchListener(new View.OnTouchListener()
         {

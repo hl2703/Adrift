@@ -26,10 +26,11 @@ public class MusicActivity3 extends AppCompatActivity {
         setContentView(R.layout.activity_music);
         TextView m =findViewById(R.id.textView3);
         m.setText(name);
+        //set animation
         l=findViewById(R.id.animationView);
         l.setAnimation(R.raw.birdani);
         l.playAnimation();
-        //if(m.getText()=="Forest") {
+        //play music
         mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.birds);
         mediaPlayer.setLooping(true);
 
@@ -55,7 +56,7 @@ public class MusicActivity3 extends AppCompatActivity {
                 }
             }
         });
-
+//back btn
         ImageView imageView = findViewById(R.id.backBtn);
         imageView.setOnTouchListener(new View.OnTouchListener() {
             @Override

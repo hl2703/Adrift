@@ -68,6 +68,8 @@ public class firstFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_first, container, false);
+
+        //click listener for breath option
         RelativeLayout r= (RelativeLayout) rootView.findViewById(R.id.layout1);
         r.setOnTouchListener(new View.OnTouchListener()
         {
@@ -83,6 +85,7 @@ public class firstFragment extends Fragment {
             }
 
         });
+        //click listener for music option
         RelativeLayout r2= (RelativeLayout) rootView.findViewById(R.id.layout3);
         r2.setOnTouchListener(new View.OnTouchListener()
         {
