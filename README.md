@@ -1,4 +1,5 @@
 # MAD_Assignment
+Done by: Hannah Loh S10186258
 Adrift
 Name of App: Adrift
 Adrift is an app targeted for sleep and relaxation. It is an audio and visual style app with minimal words, suitable for usage to aid in sleep or calming down. The app has a simple layout with minimal words so that users can navigate and follow through easily with visual and audio guides. This app will allow users to practice relaxation exercises like slow breathing and listen to calming music. It also contains a guide and exercises for users to do before they sleep. With Adrift, you will be immersed in peace and be able to drift into deep and restful sleep.
