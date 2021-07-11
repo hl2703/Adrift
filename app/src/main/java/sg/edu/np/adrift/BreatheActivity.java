@@ -29,7 +29,7 @@ public class BreatheActivity extends AppCompatActivity {
         setContentView(R.layout.activity_breathe);
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
-        // getActionBar().hide();
+
         //play music
         mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.breathe);
         mediaPlayer.setLooping(true);
@@ -72,6 +72,7 @@ public class BreatheActivity extends AppCompatActivity {
 
     @Override
     protected void onPause() {
+        //stop music player
         super.onPause();
         mediaPlayer.stop();
         mediaPlayer.release();

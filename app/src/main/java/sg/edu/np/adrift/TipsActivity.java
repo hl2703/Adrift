@@ -14,7 +14,7 @@ public class TipsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tips);
-
+//back btn
         ImageView imageView = findViewById(R.id.backBtn);
         imageView.setOnTouchListener(new View.OnTouchListener() {
             @Override

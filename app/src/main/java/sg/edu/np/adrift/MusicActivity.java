@@ -18,7 +18,7 @@ public class MusicActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        //get music name to display on page
         Intent receivingEnd = getIntent();
         String name = receivingEnd.getStringExtra("Name");
         setContentView(R.layout.activity_music);

@@ -24,16 +24,17 @@ public class NameActivity extends AppCompatActivity {
         setContentView(R.layout.activity_name);
         EditText name = findViewById(R.id.input);
 
-
+//when user click button
         button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //store name input into shared pref
                 sharedPreferences = getSharedPreferences(GLOBAL_PREFS, MODE_PRIVATE);
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putString(MY_USERNAME, name.getText().toString());
                 editor.apply();
-                Intent intent = new Intent(NameActivity.this, MainActivity.class);
+                Intent intent = new Intent(NameActivity.this, MainActivity.class);//go to main activity page
                 startActivity(intent);
         }
     });

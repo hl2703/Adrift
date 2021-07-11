@@ -1,5 +1,5 @@
 package sg.edu.np.adrift;
-
+//object for recyclerview music selection options
 public class selectObject {
     private String text1;
     private int image;

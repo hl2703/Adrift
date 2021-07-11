@@ -25,9 +25,10 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//implement bottom nav bar
+
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();//hide action bar
+        //implement bottom nav bar
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
         NavHostFragment navHostFragment =
                 (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.fragmentContainerView);
@@ -37,10 +38,10 @@ public class MainActivity extends AppCompatActivity {
                 new AppBarConfiguration.Builder(R.id.firstFragment, R.id.secondFragment,R.id.thirdFragment).build();
 
         NavigationUI.setupWithNavController(bottomNavigationView, navController);
-
+        //get name in shared pref
         sharedPreferences = getSharedPreferences(GLOBAL_PREFS, MODE_PRIVATE);
         String name = sharedPreferences.getString(MY_USERNAME, "");
         text=findViewById(R.id.nameInput);
-        text.setText(name);
+        text.setText(name);//display name
     }
 }
