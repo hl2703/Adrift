@@ -66,6 +66,22 @@ public class secondFragment extends Fragment {
             }
 
         });
+
+        RelativeLayout r2= (RelativeLayout) rootView.findViewById(R.id.l3);
+        r2.setOnTouchListener(new View.OnTouchListener()
+        {
+
+            @Override
+            public boolean onTouch(View v, MotionEvent event)
+            {
+                Intent intent = new Intent(r2.getContext(), AudioActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intent);
+                return false;
+
+            }
+
+        });
         return rootView;
 
     }

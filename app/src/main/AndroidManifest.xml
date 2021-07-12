@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.Adrift">
+        <activity android:name=".AudioActivity"></activity>
         <activity android:name=".NameActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
