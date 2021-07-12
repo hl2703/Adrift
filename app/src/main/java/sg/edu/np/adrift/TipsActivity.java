@@ -56,10 +56,10 @@ public class TipsActivity extends AppCompatActivity {
                 Color.parseColor("#FFFFFFFF"), R.drawable.note, R.drawable.ic_baseline_snooze_24);
         PaperOnboardingPage s3= new PaperOnboardingPage("Do deep breathing exercises",  "",
 
-                Color.parseColor("#FFFFFFFF"), R.drawable.note, R.drawable.ic_baseline_snooze_24);
+                Color.parseColor("#FFFFFFFF"), R.drawable.yoga, R.drawable.ic_baseline_snooze_24);
         PaperOnboardingPage s4= new PaperOnboardingPage("Reflect before sleep",  "",
 
-                Color.parseColor("#FFFFFFFF"), R.drawable.music, R.drawable.ic_baseline_snooze_24);
+                Color.parseColor("#FFFFFFFF"), R.drawable.write, R.drawable.ic_baseline_snooze_24);
         PaperOnboardingPage s5= new PaperOnboardingPage(" Listen to relaxing sounds and music",  "",
 
                 Color.parseColor("#FFFFFFFF"), R.drawable.music, R.drawable.ic_baseline_snooze_24);
