@@ -1,9 +1,12 @@
 package sg.edu.np.adrift;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 
 import androidx.fragment.app.Fragment;
 
@@ -57,7 +60,40 @@ public class thirdFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_third, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_third, container, false);
+        //set click listener for first option
+        RelativeLayout r= (RelativeLayout) rootView.findViewById(R.id.sleep_layout);
+        r.setOnTouchListener(new View.OnTouchListener()
+        {
+
+            @Override
+            public boolean onTouch(View v, MotionEvent event)
+            {
+                Intent intent = new Intent(r.getContext(), SleepExitActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intent);
+                return false;
+
+            }
+
+        });
+
+        RelativeLayout r2= (RelativeLayout) rootView.findViewById(R.id.credits_layout);
+        r2.setOnTouchListener(new View.OnTouchListener()
+        {
+
+            @Override
+            public boolean onTouch(View v, MotionEvent event)
+            {
+                Intent intent = new Intent(r2.getContext(), CreditsActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intent);
+                return false;
+
+            }
+
+        });
+        return rootView;
+
     }
 }

@@ -9,9 +9,10 @@
         android:roundIcon="@mipmap/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.Adrift">
-        <activity android:name=".AudioActivity"></activity>
-        <activity android:name=".NameActivity"/>
-
+        <activity android:name=".CreditsActivity"></activity>
+        <activity android:name=".SleepExitActivity" />
+        <activity android:name=".AudioActivity" />
+        <activity android:name=".NameActivity" />
         <activity android:name=".TipsActivity" />
         <activity android:name=".MusicActivity3" />
         <activity android:name=".MusicActivity2" />
