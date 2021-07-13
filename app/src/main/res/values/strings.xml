@@ -13,5 +13,7 @@
     <string name="todo">TODO</string>
     <string name="bookimage">bookimage</string>
     <string name="audio_image">audio image</string>
+    <string name="go_to_sleep">Go To Sleep</string>
+    <string name="credits">Credits</string>
 
 </resources>

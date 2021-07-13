@@ -87,14 +87,14 @@
                         android:id="@+id/textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/bus"
+                        android:layout_below="@id/image3"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
                         android:text="@string/breathe"
                         android:textSize="24sp" />
 
                     <ImageView
-                        android:id="@+id/bus"
+                        android:id="@+id/image3"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
                         android:layout_centerHorizontal="true"
@@ -134,14 +134,14 @@
                         android:id="@+id/textView6"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_below="@id/bus1"
+                        android:layout_below="@id/image"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
                         android:text="@string/sounds_of_nature"
                         android:textSize="24sp" />
 
                     <ImageView
-                        android:id="@+id/bus1"
+                        android:id="@+id/image"
                         android:layout_width="75dp"
                         android:layout_height="75dp"
                         android:layout_centerHorizontal="true"
