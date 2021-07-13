@@ -10,13 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Adrift">
         <activity android:name=".AudioActivity"></activity>
-        <activity android:name=".NameActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".NameActivity"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity android:name=".TipsActivity" />
         <activity android:name=".MusicActivity3" />
         <activity android:name=".MusicActivity2" />

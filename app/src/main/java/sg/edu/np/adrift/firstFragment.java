@@ -1,8 +1,10 @@
 package sg.edu.np.adrift;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
@@ -18,8 +20,10 @@ import java.util.ArrayList;
 
 public class firstFragment extends Fragment {
 
+    TextView text;
 
-
+    public String GLOBAL_PREFS = "MyPrefs";
+    public String MY_USERNAME = "MyName";
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
@@ -94,7 +98,12 @@ public class firstFragment extends Fragment {
 
         });
 
+
+
+
+
         return rootView;
+
 
 
 

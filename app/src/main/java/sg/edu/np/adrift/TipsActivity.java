@@ -48,9 +48,12 @@ public class TipsActivity extends AppCompatActivity {
     }
 
     private ArrayList<PaperOnboardingPage> getDataForOnBoarding() {
-        PaperOnboardingPage s1= new PaperOnboardingPage("Create a restful environment",  "",
+        PaperOnboardingPage s0= new PaperOnboardingPage("How To Sleep Better ",  "",
 
                 Color.parseColor("#FFFFFFFF"), R.drawable.sleep, R.drawable.ic_baseline_snooze_24);
+        PaperOnboardingPage s1= new PaperOnboardingPage("Create a restful environment",  "",
+
+                Color.parseColor("#FFFFFFFF"), R.drawable.bed, R.drawable.ic_baseline_snooze_24);
         PaperOnboardingPage s2= new PaperOnboardingPage(" Write down your worries",  "",
 
                 Color.parseColor("#FFFFFFFF"), R.drawable.note, R.drawable.ic_baseline_snooze_24);
@@ -64,7 +67,7 @@ public class TipsActivity extends AppCompatActivity {
 
                 Color.parseColor("#FFFFFFFF"), R.drawable.music, R.drawable.ic_baseline_snooze_24);
         ArrayList<PaperOnboardingPage> elements=new ArrayList<>();
-
+        elements.add(s0);
         elements.add(s1);
         elements.add(s2);
         elements.add(s3);
