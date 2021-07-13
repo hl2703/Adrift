@@ -22,6 +22,7 @@ public class NameActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_name);
+        getSupportActionBar().hide();
         EditText name = findViewById(R.id.input);
 
 //when user click button

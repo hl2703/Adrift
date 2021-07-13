@@ -24,6 +24,7 @@ public class TipsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tips);
+        getSupportActionBar().hide();
 //back btn
         Button b = findViewById(R.id.close);
         b.setOnClickListener(new View.OnClickListener() {

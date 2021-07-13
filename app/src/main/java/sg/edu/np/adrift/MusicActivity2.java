@@ -23,6 +23,7 @@ public class MusicActivity2 extends AppCompatActivity {
         LottieAnimationView l;
         @Override
         protected void onCreate(Bundle savedInstanceState) {
+            getSupportActionBar().hide();
             super.onCreate(savedInstanceState);
 
             Intent receivingEnd = getIntent();

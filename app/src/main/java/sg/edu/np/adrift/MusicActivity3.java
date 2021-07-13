@@ -20,7 +20,7 @@ public class MusicActivity3 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        getSupportActionBar().hide();
         Intent receivingEnd = getIntent();
         String name = receivingEnd.getStringExtra("Name");
         setContentView(R.layout.activity_music);

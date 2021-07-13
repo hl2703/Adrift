@@ -17,6 +17,7 @@ public class MusicActivity extends AppCompatActivity {
     ImageButton imgB;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         //get music name to display on page
         Intent receivingEnd = getIntent();

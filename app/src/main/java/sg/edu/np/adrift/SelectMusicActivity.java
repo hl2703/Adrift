@@ -18,6 +18,7 @@ public class SelectMusicActivity extends AppCompatActivity {
     ArrayList<selectObject> objectInfoList = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_music);
 //back btn
