@@ -14,8 +14,8 @@
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_width="421dp"
+            android:layout_height="30dp"
             android:background="#00008577"
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme"
@@ -57,7 +57,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/myText"
             app:layout_constraintTop_toBottomOf="@+id/toolbar"
-            app:srcCompat="@drawable/ic_baseline_emoji_food_beverage_24" />
+            app:srcCompat="@drawable/rest" />
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -98,7 +98,7 @@
                         android:layout_height="75dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
-                        app:srcCompat="@drawable/ic_baseline_blur_on_24" />
+                        app:srcCompat="@drawable/yoga" />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
@@ -144,7 +144,7 @@
                         android:layout_height="75dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
-                        app:srcCompat="@drawable/ic_baseline_library_music_24" />
+                        app:srcCompat="@drawable/nat" />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
