@@ -9,7 +9,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="#FFFFFF">
 
         <androidx.appcompat.widget.Toolbar
@@ -31,7 +31,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
             android:fontFamily="sans-serif-black"
-            android:text="Guide"
+            android:text="@string/guide"
 
             android:textSize="30sp"
             app:layout_constraintEnd_toStartOf="@+id/imageView"
@@ -43,7 +43,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="For a Good Night's Sleep"
+            android:text="@string/for_a_good_night_s_sleep"
             app:layout_constraintEnd_toStartOf="@+id/imageView"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/myText" />
@@ -56,7 +56,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/myText"
             app:layout_constraintTop_toBottomOf="@+id/toolbar"
-            app:srcCompat="@drawable/sleep" />
+            app:srcCompat="@drawable/sleep"
+            android:contentDescription="@string/todo" />
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -88,7 +89,7 @@
                         android:layout_below="@id/bus"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
-                        android:text="Tips for Sleep"
+                        android:text="@string/tips_for_sleep"
                         android:textSize="24sp" />
 
                     <ImageView
@@ -97,6 +98,7 @@
                         android:layout_height="75dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
+                        android:contentDescription="@string/bookimage"
                         app:srcCompat="@drawable/book" />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -133,7 +135,7 @@
                         android:layout_below="@id/bus1"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
-                        android:text="Audio Guide"
+                        android:text="@string/audio_guide"
                         android:textSize="24sp" />
 
                     <ImageView
@@ -142,6 +144,7 @@
                         android:layout_height="75dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
+                        android:contentDescription="@string/audio_image"
                         app:srcCompat="@drawable/music" />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>

@@ -32,7 +32,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="24dp"
             android:fontFamily="sans-serif-black"
-            android:text="Relax"
+            android:text="@string/relax"
 
             android:textSize="30sp"
             app:layout_constraintEnd_toStartOf="@+id/imageView"
@@ -44,7 +44,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="Calm your Mind"
+            android:text="@string/calm_your_mind"
             app:layout_constraintEnd_toStartOf="@+id/imageView"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/myText" />
@@ -54,6 +54,7 @@
             android:layout_width="0dp"
             android:layout_height="160dp"
             android:layout_marginEnd="16dp"
+            android:contentDescription="@string/image"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/myText"
             app:layout_constraintTop_toBottomOf="@+id/toolbar"
@@ -89,7 +90,7 @@
                         android:layout_below="@id/bus"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
-                        android:text="Breathe"
+                        android:text="@string/breathe"
                         android:textSize="24sp" />
 
                     <ImageView
@@ -98,6 +99,7 @@
                         android:layout_height="75dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
+                        android:contentDescription="@string/image"
                         app:srcCompat="@drawable/yoga" />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -135,7 +137,7 @@
                         android:layout_below="@id/bus1"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="10dp"
-                        android:text="Sounds of Nature"
+                        android:text="@string/sounds_of_nature"
                         android:textSize="24sp" />
 
                     <ImageView
@@ -144,6 +146,7 @@
                         android:layout_height="75dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="15dp"
+                        android:contentDescription="@string/image"
                         app:srcCompat="@drawable/nat" />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>

@@ -1,4 +1,17 @@
 <resources>
     <string name="app_name">Adrift</string>
     <string name="description">This bedtime sleep meditation uses deep breathing, mindfulness, and body scan techniques to help you relax, calm the mind and body, and wind down for the day so you can ease gently into sleep.</string>
+    <string name="relax">Relax</string>
+    <string name="calm_your_mind">Calm your Mind</string>
+    <string name="breathe">Breathe</string>
+    <string name="sounds_of_nature">Sounds of Nature</string>
+    <string name="image">image</string>
+    <string name="guide">Guide</string>
+    <string name="for_a_good_night_s_sleep">For a Good Night\'s Sleep</string>
+    <string name="tips_for_sleep">Tips for Sleep</string>
+    <string name="audio_guide">Audio Guide</string>
+    <string name="todo">TODO</string>
+    <string name="bookimage">bookimage</string>
+    <string name="audio_image">audio image</string>
+
 </resources>
