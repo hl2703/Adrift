@@ -20,8 +20,8 @@ import java.util.ArrayList;
 
 public class firstFragment extends Fragment {
 
-    TextView text;
-
+    TextView name;
+    SharedPreferences sharedPreferences;
     public String GLOBAL_PREFS = "MyPrefs";
     public String MY_USERNAME = "MyName";
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -64,6 +64,8 @@ public class firstFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_first, container, false);
+
+
 //set layout for first fragment
         //click listener for breathing exercise option
         RelativeLayout r= (RelativeLayout) rootView.findViewById(R.id.layout1);
@@ -96,13 +98,26 @@ public class firstFragment extends Fragment {
 
             }
 
+
         });
+        name = (TextView) rootView.findViewById(R.id.userName);
+        //String username = getActivity().getSharedPreferences(GLOBAL_PREFS,Context.MODE_PRIVATE);;
+        //name.setText(user.getUsername());
 
+        //get name in shared pref
+        sharedPreferences = this.getActivity().getSharedPreferences(GLOBAL_PREFS, Context.MODE_PRIVATE);
+        String nameUser = sharedPreferences.getString(MY_USERNAME, "");
+        //text = findViewById(R.id.nameInput);
 
-
+        name.setText(nameUser);//set name to display
 
 
         return rootView;
+
+
+
+
+
 
 
 

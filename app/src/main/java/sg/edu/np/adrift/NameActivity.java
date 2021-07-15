@@ -25,7 +25,7 @@ public class NameActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         EditText name = findViewById(R.id.input);
 
-//when user click button
+        //when user click button
         button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override

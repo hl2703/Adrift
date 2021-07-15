@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView text;
 
+
     SharedPreferences sharedPreferences;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,11 +60,16 @@ public class MainActivity extends AppCompatActivity {
 
             NavigationUI.setupWithNavController(bottomNavigationView, navController);
             //get name in shared pref
-            sharedPreferences = getSharedPreferences(GLOBAL_PREFS, MODE_PRIVATE);
+            /*sharedPreferences = getSharedPreferences(GLOBAL_PREFS, MODE_PRIVATE);
             String name = sharedPreferences.getString(MY_USERNAME, "");
             text = findViewById(R.id.nameInput);
-            text.setText(name);//display name
+            text.setText(name);//display name*/
+
+
         }
+
+
+
 
 }
 
