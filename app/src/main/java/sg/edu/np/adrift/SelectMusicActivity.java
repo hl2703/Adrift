@@ -35,13 +35,13 @@ public class SelectMusicActivity extends AppCompatActivity {
 
 
 //create new music option objects
-        selectObject obj1= new selectObject(R.drawable.smile,"Forest");
+        selectObject obj1= new selectObject(R.drawable.nat,"Forest");
         objectInfoList.add(obj1);//first relax feature
 
-        selectObject obj2= new selectObject(R.drawable.smile,"Waves");
+        selectObject obj2= new selectObject(R.drawable.beach,"Waves");
         objectInfoList.add(obj2);
 
-        selectObject obj3= new selectObject(R.drawable.smile,"Birds");
+        selectObject obj3= new selectObject(R.drawable.bird,"Birds");
         objectInfoList.add(obj3);
         //selectObject obj4= new selectObject(R.drawable.smile,"Waves");
         //objectInfoList.add(obj4);
