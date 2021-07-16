@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -15,8 +16,7 @@ public class NameActivity extends AppCompatActivity {
     public String GLOBAL_PREFS = "MyPrefs";
     public String MY_USERNAME = "MyName";
 
-    //TextView name;
-    Button button;
+    ImageButton button;
     SharedPreferences sharedPreferences;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,7 +25,7 @@ public class NameActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         EditText name = findViewById(R.id.input);
 
-        //when user click button
+        //when user click confirm button
         button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -35,7 +35,8 @@ public class NameActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putString(MY_USERNAME, name.getText().toString());
                 editor.apply();
-                Intent intent = new Intent(NameActivity.this, MainActivity.class);//go to main activity page
+                Intent intent = new Intent(NameActivity.this, MainActivity.class);
+                //go to main activity page
                 startActivity(intent);
         }
     });
