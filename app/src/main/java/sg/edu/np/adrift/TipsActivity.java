@@ -51,29 +51,44 @@ public class TipsActivity extends AppCompatActivity {
     private ArrayList<PaperOnboardingPage> getDataForOnBoarding() {
         PaperOnboardingPage s0= new PaperOnboardingPage("How To Sleep Better ",  "",
 
-                Color.parseColor("#FFFFFFFF"), R.drawable.sleep, R.drawable.ic_baseline_snooze_24);
-        PaperOnboardingPage s1= new PaperOnboardingPage("Create a restful environment",  "",
+                Color.parseColor("#FFFFFFFF"), R.drawable.sleep, R.drawable.ic_baseline_cloud_24);
+        PaperOnboardingPage s1= new PaperOnboardingPage("Create a conducive environment",  "",
 
-                Color.parseColor("#FFFFFFFF"), R.drawable.bed, R.drawable.ic_baseline_snooze_24);
+                Color.parseColor("#FFFFFFFF"), R.drawable.bed, R.drawable.ic_baseline_cloud_24);
         PaperOnboardingPage s2= new PaperOnboardingPage(" Write down your worries",  "",
 
-                Color.parseColor("#FFFFFFFF"), R.drawable.note, R.drawable.ic_baseline_snooze_24);
+                Color.parseColor("#FFFFFFFF"), R.drawable.note, R.drawable.ic_baseline_cloud_24);
         PaperOnboardingPage s3= new PaperOnboardingPage("Do deep breathing exercises",  "",
 
-                Color.parseColor("#FFFFFFFF"), R.drawable.yoga, R.drawable.ic_baseline_snooze_24);
+                Color.parseColor("#FFFFFFFF"), R.drawable.yoga, R.drawable.ic_baseline_cloud_24);
         PaperOnboardingPage s4= new PaperOnboardingPage("Reflect before sleep",  "",
 
-                Color.parseColor("#FFFFFFFF"), R.drawable.write, R.drawable.ic_baseline_snooze_24);
-        PaperOnboardingPage s5= new PaperOnboardingPage(" Listen to relaxing sounds and music",  "",
+                Color.parseColor("#FFFFFFFF"), R.drawable.write, R.drawable.ic_baseline_cloud_24);
 
-                Color.parseColor("#FFFFFFFF"), R.drawable.music, R.drawable.ic_baseline_snooze_24);
+        PaperOnboardingPage s5= new PaperOnboardingPage("Listen to relaxing sounds and music",  "",
+
+                Color.parseColor("#FFFFFFFF"), R.drawable.music, R.drawable.ic_baseline_cloud_24);
+
+        PaperOnboardingPage s6= new PaperOnboardingPage("Stick to a sleep schedule",  "",
+
+                Color.parseColor("#FFFFFFFF"), R.drawable.time, R.drawable.ic_baseline_cloud_24);
+        PaperOnboardingPage s7= new PaperOnboardingPage("Practice gratitude",  "",
+
+                Color.parseColor("#FFFFFFFF"), R.drawable.writing, R.drawable.ic_baseline_cloud_24);
+
+
         ArrayList<PaperOnboardingPage> elements=new ArrayList<>();
         elements.add(s0);
         elements.add(s1);
-        elements.add(s2);
+
         elements.add(s3);
+
         elements.add(s4);
+        elements.add(s2);
+        elements.add(s7);
         elements.add(s5);
+        elements.add(s6);
+
         return elements;
     }
 
