@@ -7,17 +7,12 @@
     android:layout_height="match_parent"
     tools:context=".TipsActivity" >
 
-    <ImageView
-        android:id="@+id/cancel"
-        android:layout_width="47dp"
-        android:layout_height="47dp"
-        app:srcCompat="@drawable/arrow" />
 
     <Button
         android:id="@+id/close"
         android:layout_width="50dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="right|top"
+        android:layout_gravity="end|top"
         android:text="X"
         android:textColor="#3F51B5"
         app:backgroundTint="#00FFFFFF" />
