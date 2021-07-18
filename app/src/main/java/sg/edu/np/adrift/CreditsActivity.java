@@ -19,7 +19,7 @@ public class CreditsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_credits);
 
-        ImageView imageView = findViewById(R.id.backBtn);
+        ImageView imageView = findViewById(R.id.backbutton);
         imageView.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
