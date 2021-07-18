@@ -36,7 +36,7 @@ public class SleepExitActivity extends AppCompatActivity {
 
     public void onLightPressed() {
         new AlertDialog.Builder(this)
-                .setIcon(android.R.drawable.ic_dialog_alert)
+                .setIcon(R.drawable.ic_baseline_bedtime_24)
                 .setTitle("Go To Sleep")
                 .setMessage("Would you like to exit the app?")
                 .setNegativeButton("No", new DialogInterface.OnClickListener()

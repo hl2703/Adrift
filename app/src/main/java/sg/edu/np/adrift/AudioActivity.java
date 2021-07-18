@@ -49,7 +49,7 @@ public class AudioActivity extends AppCompatActivity {
         imageView.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                Intent intent = new Intent(AudioActivity.this, MainActivity.class);
+                Intent intent = new Intent(AudioActivity.this,secondFragment.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(intent);
                 return false;
