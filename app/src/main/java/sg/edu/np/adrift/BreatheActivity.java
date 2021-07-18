@@ -20,8 +20,9 @@ public class BreatheActivity extends AppCompatActivity {
 
     private LottieAnimationView animationView;
 
-
+    //Boolean isPlaying=false;
     MediaPlayer mediaPlayer;
+Boolean playerExist=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -31,9 +32,9 @@ public class BreatheActivity extends AppCompatActivity {
         actionBar.hide();
 
         //play music
-        mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.breathe);
-        mediaPlayer.setLooping(true);
-        animationView=findViewById(R.id.animationView);
+        //mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.breathe);
+
+        animationView = findViewById(R.id.animationView);
         //start countdown
         final Handler handler = new Handler();
         final TextView textView = (TextView) findViewById(R.id.textView);
@@ -42,27 +43,46 @@ public class BreatheActivity extends AppCompatActivity {
             @Override
             public void run() {
                 textView.setText(Integer.toString(n.get()));
-                if(n.getAndDecrement() >= 1 )
+                if (n.getAndDecrement() >= 1)
                     handler.postDelayed(this, 1000);
                 else {
-                    textView.setVisibility(View.GONE);
-                    // start the game
-                    mediaPlayer.start();
-                    animationView.playAnimation();
+
+                        textView.setVisibility(View.GONE);
+                        // start the game
+                    mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.breathe);
+                        mediaPlayer.setLooping(true);
+                        mediaPlayer.start();
+                        playerExist=true;
+                        animationView.playAnimation();
+                    }
                 }
-            }
+
         };
         handler.postDelayed(counter, 1000);
         //animationView = findViewById(R.id.animationView);
 
         //back button
-        ImageView imageView =findViewById(R.id.backBtn);
+        ImageView imageView = findViewById(R.id.backBtn);
         imageView.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                Intent intent = new Intent(BreatheActivity.this,MainActivity.class);
+               /* mediaPlayer.stop();
+                mediaPlayer.release();*/
+                //isPlaying=false;
+               /* if(mediaPlayer.isPlaying()==true) {
+                    mediaPlayer.stop();
+                    mediaPlayer.release();
+                }*/
+             /*   Intent intent = new Intent(BreatheActivity.this, MainActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
-                startActivity(intent);
+                startActivity(intent);*/
+                if(playerExist==true){
+                    mediaPlayer.stop();
+                    mediaPlayer.release();
+
+                }
+                playerExist=false;
+               finish();
                 return false;
             }
         });
@@ -74,10 +94,17 @@ public class BreatheActivity extends AppCompatActivity {
     protected void onPause() {
         //stop music player
         super.onPause();
-        mediaPlayer.stop();
-        mediaPlayer.release();
+
+//
+        if(playerExist==true) {
+
+            mediaPlayer.stop();
+            mediaPlayer.release();
+        }
+
 
     }
-
 }
+
+
 

@@ -1,8 +1,15 @@
 package sg.edu.np.adrift;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.MotionEvent;
+import android.view.View;
+import android.widget.ImageView;
 
 public class CreditsActivity extends AppCompatActivity {
 
@@ -11,5 +18,17 @@ public class CreditsActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_credits);
+
+        ImageView imageView = findViewById(R.id.backBtn);
+        imageView.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+               /* Intent intent = new Intent(CreditsActivity.this, MainActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+                startActivity(intent);*/
+                finish();
+                return false;
+            }
+        });
     }
 }

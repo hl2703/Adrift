@@ -30,10 +30,11 @@ public class TipsActivity extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(TipsActivity.this,secondFragment.class);
+                /*Intent intent = new Intent(TipsActivity.this,MainActivity.class);
 
 
-                startActivity(intent);
+                startActivity(intent);*/
+                finish();
 
             }
         });

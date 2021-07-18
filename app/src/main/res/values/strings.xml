@@ -15,5 +15,12 @@
     <string name="audio_image">audio image</string>
     <string name="go_to_sleep">Go To Sleep</string>
     <string name="credits">Credits</string>
+    <string name="sound_and_music">Sound and music</string>
+    <string name="animation">Animation</string>
+    <string name="images">Images</string>
+    <string name="icons">Icons</string>
+    <string name="sleep_meditation_audio">Sleep meditation audio</string>
+    <string name="onboarding_screen">Onboarding screen</string>
+    <string name="resource_credits">Resource Credits</string>
 
 </resources>
