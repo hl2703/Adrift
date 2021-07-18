@@ -39,6 +39,7 @@ public class SleepExitActivity extends AppCompatActivity {
                 .setIcon(R.drawable.ic_baseline_bedtime_24)
                 .setTitle("Go To Sleep")
                 .setMessage("Would you like to exit the app?")
+                .setCancelable(false)
                 .setNegativeButton("No", new DialogInterface.OnClickListener()
                 {
                     @Override
