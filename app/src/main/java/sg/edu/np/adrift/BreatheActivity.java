@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.os.Handler;
 import android.view.MotionEvent;
 import android.view.View;
@@ -22,7 +23,9 @@ public class BreatheActivity extends AppCompatActivity {
 
     //Boolean isPlaying=false;
     MediaPlayer mediaPlayer;
-Boolean playerExist=false;
+    TextView textView;
+    ImageView imageView;
+//Boolean playerExist=false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -31,12 +34,14 @@ Boolean playerExist=false;
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
+        mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.breathe);
+        mediaPlayer.setLooping(true);
         //play music
         //mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.breathe);
 
         animationView = findViewById(R.id.animationView);
         //start countdown
-        final Handler handler = new Handler();
+        /*final Handler handler = new Handler();
         final TextView textView = (TextView) findViewById(R.id.textView);
         final java.util.concurrent.atomic.AtomicInteger n = new AtomicInteger(3);
         final Runnable counter = new Runnable() {
@@ -49,61 +54,109 @@ Boolean playerExist=false;
 
                         textView.setVisibility(View.GONE);
                         // start the game
-                    mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.breathe);
-                        mediaPlayer.setLooping(true);
-                        mediaPlayer.start();
-                        playerExist=true;
-                        animationView.playAnimation();
+                    animationView.playAnimation();
+                    mediaPlayer.setLooping(true);
+                    mediaPlayer.start();
+                       // playerExist=true;
+
                     }
                 }
 
         };
         handler.postDelayed(counter, 1000);
-        //animationView = findViewById(R.id.animationView);
+        //animationView = findViewById(R.id.animationView);*/
 
         //back button
-        ImageView imageView = findViewById(R.id.backBtn);
+        /*imageView = findViewById(R.id.backBtn);
         imageView.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-               /* mediaPlayer.stop();
-                mediaPlayer.release();*/
+               *//* mediaPlayer.stop();
+                mediaPlayer.release();*//*
                 //isPlaying=false;
-               /* if(mediaPlayer.isPlaying()==true) {
+               *//* if(mediaPlayer.isPlaying()==true) {
                     mediaPlayer.stop();
                     mediaPlayer.release();
-                }*/
-             /*   Intent intent = new Intent(BreatheActivity.this, MainActivity.class);
+                }*//*
+             *//*   Intent intent = new Intent(BreatheActivity.this, MainActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
-                startActivity(intent);*/
-                if(playerExist==true){
+                startActivity(intent);*//*
+                //if(playerExist==true){
+                    //mediaPlayer.stop();
+                   // mediaPlayer.release();
+
+               // }
+               // playerExist=false;
+                if(mediaPlayer.isPlaying()) {
                     mediaPlayer.stop();
                     mediaPlayer.release();
+                    //  }
 
                 }
-                playerExist=false;
+
+                mediaPlayer.release();
                finish();
+                return false;
+            }
+        });*/
+        countDownTimer();
+
+    }
+    private void countDownTimer(){
+
+        CountDownTimer timer = new CountDownTimer(4000,1000) {
+            @Override
+            public void onTick(long millisUntilFinished) {
+                textView=findViewById(R.id.countdownText);
+                textView.setText(" "+millisUntilFinished/1000);
+
+
+            }
+
+            @Override
+            public void onFinish() {
+
+                textView.setVisibility(View.GONE);
+                // start the game
+                animationView.playAnimation();
+
+                mediaPlayer.start();
+            }
+        };
+        timer.start();
+        imageView = findViewById(R.id.backBtn);
+        imageView.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+
+                if(mediaPlayer.isPlaying()) {
+                    mediaPlayer.stop();
+                    mediaPlayer.release();
+                    //  }
+
+                }
+                timer.cancel();
+                mediaPlayer.release();
+                finish();
                 return false;
             }
         });
 
-
     }
-
-    @Override
-    protected void onPause() {
+    //@Override
+   /* protected void onPause() {
         //stop music player
         super.onPause();
 
 //
-        if(playerExist==true) {
+        //if(playerExist==true) {
+if(mediaPlayer.isPlaying()) {
+    mediaPlayer.stop();
+    mediaPlayer.release();
+    //  }
 
-            mediaPlayer.stop();
-            mediaPlayer.release();
-        }
-
-
-    }
+}
+    }*/
 }
 
 

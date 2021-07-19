@@ -8,7 +8,10 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class SleepExitActivity extends AppCompatActivity {
 
@@ -25,6 +28,9 @@ public class SleepExitActivity extends AppCompatActivity {
             public void onClick(View v) {
                 c.setBackgroundColor(getResources().getColor(R.color.black));
                 i.setImageResource(R.drawable.lamp2);
+                TextView text = findViewById(R.id.goodnight);
+                Animation animFadeOut = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade_out);
+                text.startAnimation(animFadeOut);
                 countDownTimer();//start timer to show dialogue after 2 seconds
 
             }
@@ -63,6 +69,7 @@ public class SleepExitActivity extends AppCompatActivity {
     private void countDownTimer(){
         CountDownTimer timer = new CountDownTimer(2000,1000) {
             @Override
+
             public void onTick(long millisUntilFinished) {
 
             }
@@ -70,6 +77,8 @@ public class SleepExitActivity extends AppCompatActivity {
             @Override
             public void onFinish() {
                 onLightPressed();
+                TextView text = findViewById(R.id.goodnight);
+                text.setText("");
             }
         };
         timer.start();
