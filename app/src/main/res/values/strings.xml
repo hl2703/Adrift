@@ -3,7 +3,7 @@
     <string name="description">This bedtime sleep meditation uses deep breathing, mindfulness, and body scan techniques to help you relax, calm the mind and body, and wind down for the day so you can ease gently into sleep.</string>
     <string name="relax">Relax</string>
     <string name="calm_your_mind">Calm your Mind</string>
-    <string name="breathe">Breathe</string>
+    <string name="breathe">4-7-8 Breathing</string>
     <string name="sounds_of_nature">Sounds of Nature</string>
     <string name="image">image</string>
     <string name="guide">Guide</string>
@@ -22,5 +22,6 @@
     <string name="sleep_meditation_audio">Sleep meditation audio</string>
     <string name="onboarding_screen">Onboarding screen</string>
     <string name="resource_credits">Resource Credits</string>
+    <string name="visit">For more information on the 4-7-8 breathing technique, visit https://www.medicalnewstoday.com/articles/324417</string>
 
 </resources>
