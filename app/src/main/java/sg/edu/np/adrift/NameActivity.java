@@ -35,7 +35,7 @@ public class NameActivity extends AppCompatActivity {
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putString(MY_USERNAME, name.getText().toString());
                 editor.apply();
-                Intent intent = new Intent(NameActivity.this, MainActivity.class);
+                Intent intent = new Intent(NameActivity.this, SplashActivity.class);
                 //go to main activity page
                 startActivity(intent);
         }

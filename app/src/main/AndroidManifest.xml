@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/icon"
         android:supportsRtl="true"
         android:theme="@style/Theme.Adrift">
-        <activity android:name=".SplashActivity"></activity>
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".CreditsActivity" />
         <activity android:name=".SleepExitActivity" />
         <activity android:name=".AudioActivity" />
@@ -21,11 +27,7 @@
         <activity android:name=".SelectMusicActivity" />
         <activity android:name=".BreatheActivity" />
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

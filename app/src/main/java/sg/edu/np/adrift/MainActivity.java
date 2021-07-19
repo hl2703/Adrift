@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+/*
 
         Boolean isFirstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
                 .getBoolean("isFirstRun", true);
@@ -39,11 +40,12 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, "First Run", Toast.LENGTH_LONG)
                     .show();
         }
+*/
 
 
-        getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
+      /*  getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
                 .putBoolean("isFirstRun", false).commit();
-
+*/
 
 
 
