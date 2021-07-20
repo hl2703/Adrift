@@ -104,11 +104,11 @@ public class BreatheActivity extends AppCompatActivity {
     }
     private void countDownTimer(){
 
-        CountDownTimer timer = new CountDownTimer(4000,1000) {
+        CountDownTimer timer = new CountDownTimer(3000,1000) {
             @Override
             public void onTick(long millisUntilFinished) {
                 textView=findViewById(R.id.countdownText);
-                textView.setText(" "+millisUntilFinished/1000);
+                textView.setText(" "+(millisUntilFinished+1000)/1000);
 
 
             }
