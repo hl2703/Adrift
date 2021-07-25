@@ -17,8 +17,6 @@ public class secondFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-
-
     private String mParam1;
     private String mParam2;
 
@@ -54,15 +52,13 @@ public class secondFragment extends Fragment {
         RelativeLayout r= (RelativeLayout) rootView.findViewById(R.id.l1);
         r.setOnTouchListener(new View.OnTouchListener()
         {
-
             @Override
             public boolean onTouch(View v, MotionEvent event)
             {
-                Intent intent = new Intent(r.getContext(), TipsActivity.class);
+                Intent intent = new Intent(r.getContext(), TipsActivity.class);//go to tips page
                 intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(intent);
                 return false;
-
             }
 
         });
@@ -70,11 +66,10 @@ public class secondFragment extends Fragment {
         RelativeLayout r2= (RelativeLayout) rootView.findViewById(R.id.l3);
         r2.setOnTouchListener(new View.OnTouchListener()
         {
-
             @Override
             public boolean onTouch(View v, MotionEvent event)
             {
-                Intent intent = new Intent(r2.getContext(), AudioActivity.class);
+                Intent intent = new Intent(r2.getContext(), AudioActivity.class);//go to sleep audio page
                 intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(intent);
                 return false;

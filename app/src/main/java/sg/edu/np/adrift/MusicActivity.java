@@ -26,11 +26,11 @@ public class MusicActivity extends AppCompatActivity {
         TextView m =findViewById(R.id.textView3);
         m.setText(name);
 
-       //play music
+
             mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.forest);
             mediaPlayer.setLooping(true);
 
-            mediaPlayer.start();
+            mediaPlayer.start();//play music
 
             //pause play func
             //Button pButton=findViewById(R.id.pButton);
@@ -52,7 +52,7 @@ public class MusicActivity extends AppCompatActivity {
                     }
                 }
             });
-//back btn
+            //back btn
             ImageView imageView = findViewById(R.id.backBtn);
             imageView.setOnTouchListener(new View.OnTouchListener() {
                 @Override
@@ -68,7 +68,7 @@ public class MusicActivity extends AppCompatActivity {
 
    protected void onPause() {
         super.onPause();
-        mediaPlayer.stop();
+        mediaPlayer.stop();//stop audio
         mediaPlayer.release();
 
     }

@@ -20,21 +20,14 @@ public class SplashActivity extends AppCompatActivity {
         actionBar.hide();//hide action bar
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-
-
-
-
+        //check if app run for first time
         Boolean isFirstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
                 .getBoolean("isFirstRun", true);
-
 
         if (isFirstRun) {
             //show start activity
             startTimer=false;
             startActivity(new Intent(SplashActivity.this, NameActivity.class));
-
-            //Toast.makeText(MainActivity.this, "First Run", Toast.LENGTH_LONG)
-                   // .show();
         }
         getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
                 .putBoolean("isFirstRun", false).commit();
@@ -48,7 +41,7 @@ public class SplashActivity extends AppCompatActivity {
                     finish();
                 }
             }, secondsDelayed * 7000);
-            countDownTimer();
+            countDownTimer();//start countdown with text displayed
         };
 
     }

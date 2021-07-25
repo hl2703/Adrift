@@ -4,8 +4,6 @@ public class selectObject {
     private String text1;
     private int image;
 
-
-
     public selectObject(int image, String text) {
         this.image=image;
         this.text1=text;
@@ -25,7 +23,6 @@ public class selectObject {
     public void setImage(int image) {
         this.image = image;
     }
-
 
 
 }

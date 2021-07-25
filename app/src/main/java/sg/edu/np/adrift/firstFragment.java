@@ -27,8 +27,6 @@ public class firstFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-
-
     private String mParam1;
     private String mParam2;
 
@@ -56,7 +54,6 @@ public class firstFragment extends Fragment {
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
 
-
     }
 
 
@@ -64,9 +61,7 @@ public class firstFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_first, container, false);
-
-
-//set layout for first fragment
+        //set layout for first fragment
         //click listener for breathing exercise option
         RelativeLayout r= (RelativeLayout) rootView.findViewById(R.id.layout1);
         r.setOnTouchListener(new View.OnTouchListener()
@@ -75,7 +70,7 @@ public class firstFragment extends Fragment {
             @Override
             public boolean onTouch(View v, MotionEvent event)
             {
-                Intent intent = new Intent(r.getContext(), BreatheActivity.class);
+                Intent intent = new Intent(r.getContext(), BreatheActivity.class);//go to breathing exercise
                 intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(intent);
                 return false;
@@ -98,28 +93,16 @@ public class firstFragment extends Fragment {
 
             }
 
-
         });
         name = (TextView) rootView.findViewById(R.id.userName);
-        //String username = getActivity().getSharedPreferences(GLOBAL_PREFS,Context.MODE_PRIVATE);;
-        //name.setText(user.getUsername());
 
         //get name in shared pref
         sharedPreferences = this.getActivity().getSharedPreferences(GLOBAL_PREFS, Context.MODE_PRIVATE);
         String nameUser = sharedPreferences.getString(MY_USERNAME, "");
-        //text = findViewById(R.id.nameInput);
-
         name.setText(nameUser);//set name to display
 
 
         return rootView;
-
-
-
-
-
-
-
 
 
     }

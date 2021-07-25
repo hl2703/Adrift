@@ -23,10 +23,7 @@ public class CreditsActivity extends AppCompatActivity {
         imageView.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-               /* Intent intent = new Intent(CreditsActivity.this, MainActivity.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
-                startActivity(intent);*/
-                finish();
+                finish();//go back
                 return false;
             }
         });

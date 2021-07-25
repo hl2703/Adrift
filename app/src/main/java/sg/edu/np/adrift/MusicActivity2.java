@@ -16,11 +16,9 @@ import com.airbnb.lottie.LottieAnimationView;
 
 public class MusicActivity2 extends AppCompatActivity {
 
-
-
         MediaPlayer mediaPlayer;
         ImageButton imgB;
-        LottieAnimationView l;
+        LottieAnimationView lottie;
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             getSupportActionBar().hide();
@@ -32,9 +30,9 @@ public class MusicActivity2 extends AppCompatActivity {
             TextView m =findViewById(R.id.textView3);
             m.setText(name);
             //set animation
-            l=findViewById(R.id.animationView);
-            l.setAnimation(R.raw.wave);
-            l.playAnimation();
+            lottie=findViewById(R.id.animationView);
+            lottie.setAnimation(R.raw.wave);
+            lottie.playAnimation();
             //play music
             mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.waves);
             mediaPlayer.setLooping(true);
@@ -61,7 +59,7 @@ public class MusicActivity2 extends AppCompatActivity {
                     }
                 }
             });
-//back btn
+            //back btn
             ImageView imageView = findViewById(R.id.backBtn);
             imageView.setOnTouchListener(new View.OnTouchListener() {
                 @Override
@@ -77,7 +75,7 @@ public class MusicActivity2 extends AppCompatActivity {
 
         protected void onPause() {
             super.onPause();
-            mediaPlayer.stop();
+            mediaPlayer.stop();//stop audio
             mediaPlayer.release();
 
         }

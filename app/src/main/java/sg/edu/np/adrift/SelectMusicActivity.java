@@ -21,7 +21,7 @@ public class SelectMusicActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_music);
-//back btn
+        //back btn
         ImageView imageView =findViewById(R.id.backBtn);
         imageView.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -34,7 +34,7 @@ public class SelectMusicActivity extends AppCompatActivity {
         });
 
 
-//create new music option objects
+        //create new music option objects
         selectObject obj1= new selectObject(R.drawable.nat,"Forest");
         objectInfoList.add(obj1);//first relax feature
 
@@ -43,13 +43,9 @@ public class SelectMusicActivity extends AppCompatActivity {
 
         selectObject obj3= new selectObject(R.drawable.bird,"Birds");
         objectInfoList.add(obj3);
-        //selectObject obj4= new selectObject(R.drawable.smile,"Waves");
-        //objectInfoList.add(obj4);
 
-        //selectObject obj5= new selectObject(R.drawable.smile,"Waves");
-        //objectInfoList.add(obj5);
 
-//additional objects
+        //additional objects
         for (int i=1; i<5;i++){
 
             selectObject obj = new selectObject(R.drawable.ic_baseline_lock_24,String.valueOf("Coming soon"));

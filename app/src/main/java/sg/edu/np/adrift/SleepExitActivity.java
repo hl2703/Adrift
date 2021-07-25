@@ -20,16 +20,16 @@ public class SleepExitActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sleep_exit);
-        ImageView i = findViewById(R.id.lamp);
-        ConstraintLayout c =findViewById(R.id.sleeplayout);
-        i.setOnClickListener(new View.OnClickListener() {
+        ImageView image = findViewById(R.id.lamp);
+        ConstraintLayout constraintLayout =findViewById(R.id.sleeplayout);
+        image.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                c.setBackgroundColor(getResources().getColor(R.color.black));
-                i.setImageResource(R.drawable.lamp2);
+                constraintLayout.setBackgroundColor(getResources().getColor(R.color.black));//set background to black
+                image.setImageResource(R.drawable.lamp2);
                 TextView text = findViewById(R.id.goodnight);
-                Animation animFadeOut = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade_out);
+                Animation animFadeOut = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade_out);//fade out text
                 text.startAnimation(animFadeOut);
                 countDownTimer();//start timer to show dialogue after 2 seconds
 

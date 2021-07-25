@@ -14,7 +14,7 @@ import android.widget.TextView;
 import com.airbnb.lottie.LottieAnimationView;
 
 public class MusicActivity3 extends AppCompatActivity {
-    LottieAnimationView l;
+    LottieAnimationView lottie;
     MediaPlayer mediaPlayer;
     ImageButton imgB;
     @Override
@@ -27,17 +27,16 @@ public class MusicActivity3 extends AppCompatActivity {
         TextView m =findViewById(R.id.textView3);
         m.setText(name);
         //set animation
-        l=findViewById(R.id.animationView);
-        l.setAnimation(R.raw.birdani);
-        l.playAnimation();
-        //play music
+        lottie=findViewById(R.id.animationView);
+        lottie.setAnimation(R.raw.birdani);
+        lottie.playAnimation();//start animation
+
         mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.birds);
         mediaPlayer.setLooping(true);
 
-        mediaPlayer.start();
+        mediaPlayer.start();//start audio
 
-        //pause play func
-        //Button pButton=findViewById(R.id.pButton);
+        //pause play function
         imgB = findViewById(R.id.imageButton);
         imgB.setOnClickListener(new View.OnClickListener() {
 
@@ -45,8 +44,6 @@ public class MusicActivity3 extends AppCompatActivity {
 
                 if (mediaPlayer.isPlaying()) {
                     mediaPlayer.pause();
-
-
                     imgB.setImageResource(R.drawable.play);
 
                 } else {
@@ -56,7 +53,7 @@ public class MusicActivity3 extends AppCompatActivity {
                 }
             }
         });
-//back btn
+        //back btn
         ImageView imageView = findViewById(R.id.backBtn);
         imageView.setOnTouchListener(new View.OnTouchListener() {
             @Override
@@ -67,12 +64,12 @@ public class MusicActivity3 extends AppCompatActivity {
                 return false;
             }
         });
-        // }
+
     }
 
     protected void onPause() {
         super.onPause();
-        mediaPlayer.stop();
+        mediaPlayer.stop();//stop audio
         mediaPlayer.release();
 
     }

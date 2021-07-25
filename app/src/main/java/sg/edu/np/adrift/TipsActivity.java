@@ -25,20 +25,16 @@ public class TipsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tips);
         getSupportActionBar().hide();
-//back btn
-        Button b = findViewById(R.id.close);
-        b.setOnClickListener(new View.OnClickListener() {
+        //back btn
+        Button button = findViewById(R.id.close);
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*Intent intent = new Intent(TipsActivity.this,MainActivity.class);
 
-
-                startActivity(intent);*/
                 finish();
 
             }
         });
-        // }
 
         fragmentManager = getSupportFragmentManager();
 
@@ -83,9 +79,7 @@ public class TipsActivity extends AppCompatActivity {
         ArrayList<PaperOnboardingPage> elements=new ArrayList<>();
         elements.add(s0);
         elements.add(s1);
-
         elements.add(s3);
-
         elements.add(s4);
         elements.add(s2);
         elements.add(s7);

@@ -24,26 +24,21 @@ public class SelectAdapter extends RecyclerView.Adapter<SelectViewHolder> {
 
     public SelectViewHolder onCreateViewHolder (ViewGroup parent, int viewType){
         View item;
-
         item = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_item, parent, false);
-
-
 
         return new SelectViewHolder(item);
     }
 
     public void onBindViewHolder(SelectViewHolder holder, int position){
        selectObject listObjects = data.get(position);
+       holder.image.setImageResource(listObjects.getImage());
+       holder.txt.setText(listObjects.getText1());
 
-
-           holder.image.setImageResource(listObjects.getImage());
-           holder.txt.setText(listObjects.getText1());
-
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
+       holder.itemView.setOnClickListener(new View.OnClickListener() {
+           @Override
             public void onClick(View v) {
 
-//link to different activities based on position
+            //link to different activities based on position
                 if (position == 0) {
                     Intent intent = new Intent(holder.txt.getContext(), MusicActivity.class);
                     intent.putExtra("Name", listObjects.getText1()); //send info to new activity in a map

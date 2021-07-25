@@ -30,15 +30,7 @@ public class thirdFragment extends Fragment {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment thirdFragment.
-     */
-    // TODO: Rename and change types and number of parameters
+
     public static thirdFragment newInstance(String param1, String param2) {
         thirdFragment fragment = new thirdFragment();
         Bundle args = new Bundle();
@@ -69,7 +61,7 @@ public class thirdFragment extends Fragment {
             @Override
             public boolean onTouch(View v, MotionEvent event)
             {
-                Intent intent = new Intent(r.getContext(), SleepExitActivity.class);
+                Intent intent = new Intent(r.getContext(), SleepExitActivity.class);//go to sleep activity
                 intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(intent);
                 return false;
@@ -85,7 +77,7 @@ public class thirdFragment extends Fragment {
             @Override
             public boolean onTouch(View v, MotionEvent event)
             {
-                Intent intent = new Intent(r2.getContext(), CreditsActivity.class);
+                Intent intent = new Intent(r2.getContext(), CreditsActivity.class);//go to credits page
                 intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(intent);
                 return false;
