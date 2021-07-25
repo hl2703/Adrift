@@ -269,8 +269,13 @@
                 android:id="@+id/textView42"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:text="For feedback/issues contact: adrift273@gmail.com" />
+                android:text="For feedback/issues, contact: adrift273@gmail.com"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
         </LinearLayout>
     </ScrollView>
 
