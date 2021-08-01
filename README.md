@@ -79,6 +79,11 @@ Observed whether user was able to understand the feature as I did not intend to 
 -	Testing of breathing exercise:
 Found a flaw that caused the app to force shut down when user click breathing exercise and click back before the countdown timer reached 0. I went to fix and change the structure and flow of the code for that feature.
 
+<br />
+
+ <br />
+link to play store: https://play.google.com/store/apps/details?id=sg.edu.np.adrift<br /><br />
+
 
 Credits:<br />
 Content<br />
@@ -123,8 +128,5 @@ https://icons8.com/
 sleep meditation audio:<br />
 https://www.helpguide.org/meditations/bedtime-meditation-for-sleep.html<br />
 paper onboarding screen: <br />
-www.ramotion.com
-
-
-
+www.ramotion.com 
 Done by: Hannah Loh S10186258
