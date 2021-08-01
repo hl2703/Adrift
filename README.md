@@ -14,8 +14,11 @@ For users who want to use the app for sleep, they can make use of all features o
 Within each page, I designed a top to bottom flow whereby features that I want user to do first is placed on top. 
 In general the navigation structure is a left to right flow throughout the app and a top down flow within each main page in the app.
 The whole navigation flow, events and features is based on the process to get a good night’s sleep.</br>
-</br> Design process from draft to final layout
+</br> Design process from draft to final layout:</br>
 ![relax layout](https://user-images.githubusercontent.com/73155822/127760944-8e80218d-ff1f-4c9d-8dde-915a75b43e29.png)
+![layout](https://user-images.githubusercontent.com/73155822/127761024-808c2313-047a-45fc-a28b-4dd8d395fd2e.png)
+![layout](https://user-images.githubusercontent.com/73155822/127761042-a7131343-f0e5-4437-ab70-7243bb1398d5.png)
+
 
 
 Current Features:
