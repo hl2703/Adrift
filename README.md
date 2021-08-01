@@ -82,9 +82,9 @@ Found a flaw that caused the app to force shut down when user click breathing ex
 <br />
 
  <br />
-link to play store: https://play.google.com/store/apps/details?id=sg.edu.np.adrift<br /><br />
-
-
+link to play store: https://play.google.com/store/apps/details?id=sg.edu.np.adrift<br />
+link to pitch: https://drive.google.com/file/d/1y22sHu9-NH1Y4CX6or7Fo9dRoaovoNvc/view?usp=sharing <br />
+<br />
 Credits:<br />
 Content<br />
 Layout: https://www.taimoorsikander.com/modern-design-dashboard-in-android-studio/<br />
