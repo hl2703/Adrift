@@ -106,7 +106,7 @@ lottie animation in android: https://lottiefiles.com/blog/working-with-lottie/ge
 Media<br />
 Music:<br />
 Sound effects: https://soundbible.com/free-sound-effects-1.html<br />
-Sound effects obtained from https://www.zapsplat.com“<br />
+Sound effects obtained from https://www.zapsplat.com<br />
 Breathing exercise music: Breathe New Life (openchurch.com)<br />
 
 
@@ -128,5 +128,5 @@ https://icons8.com/
 sleep meditation audio:<br />
 https://www.helpguide.org/meditations/bedtime-meditation-for-sleep.html<br />
 paper onboarding screen: <br />
-www.ramotion.com 
+www.ramotion.com <br /><br />
 Done by: Hannah Loh S10186258
