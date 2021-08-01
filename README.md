@@ -6,13 +6,16 @@ It is an app idea born out of the context of the increase in mental health issue
 Design process: 
 The thinking process behind the theme and design is to create an atmosphere suitable for relaxing the mind and also before sleep. I chose a simple layout with minimalistic style as I did not want the layout to look messy or cluttered with will make it difficult for users to navigate and to make it more pleasant and peaceful looking. Throughout the app, I tried to limit the number of words used as I did not want too much stimulation of the mind by needing to read through long paragraphs of words, which can be tedious before sleep or trying to calm down. I used visual ,audio guides and little words so that I can get my message across to users quickly and simply. 
 <br />
+
 <br />Navigation design of app:
 The flow of navigation of the features in the app is from left to right. 
 For users who want to use the app to relax, they can use the features on the “relax” page.
 For users who want to use the app for sleep, they can make use of all features of the app. The flow would be “relax” page, ”sleep” page , then “go to sleep” feature on the “more “ page, following a left to right flow.
 Within each page, I designed a top to bottom flow whereby features that I want user to do first is placed on top. 
 In general the navigation structure is a left to right flow throughout the app and a top down flow within each main page in the app.
-The whole navigation flow, events and features is based on the process to get a good night’s sleep.
+The whole navigation flow, events and features is based on the process to get a good night’s sleep.</br>
+</br> Design process from draft to final layout
+![relax layout](https://user-images.githubusercontent.com/73155822/127760944-8e80218d-ff1f-4c9d-8dde-915a75b43e29.png)
 
 
 Current Features:
