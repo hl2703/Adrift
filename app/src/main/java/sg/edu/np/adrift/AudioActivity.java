@@ -25,7 +25,7 @@ public class AudioActivity extends AppCompatActivity {
         mediaPlayer.start();
 
         //pause play func
-        //Button pButton=findViewById(R.id.pButton);
+
         imgB = findViewById(R.id.imageButton);
         imgB.setOnClickListener(new View.OnClickListener() {
 
@@ -44,14 +44,12 @@ public class AudioActivity extends AppCompatActivity {
                 }
             }
         });
-//back btn
+        //back btn
         ImageView imageView = findViewById(R.id.backBtn);
         imageView.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                /*Intent intent = new Intent(AudioActivity.this,secondFragment.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
-                startActivity(intent);*/
+              //go back to prev activity
                 finish();
                 return false;
             }
